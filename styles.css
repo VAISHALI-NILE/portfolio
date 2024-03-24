@@ -186,7 +186,7 @@ body {
   grid-template-columns: 1fr 4fr;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .pr-link {
     font-size: 1rem;
   }
