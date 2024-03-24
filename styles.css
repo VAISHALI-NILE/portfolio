@@ -33,7 +33,7 @@ body {
   display: inline-block;
   font-family: Figtree, sans-serif;
   font-weight: 400;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .msg-img {
@@ -53,12 +53,12 @@ body {
   padding-left: 0.625rem;
   padding-right: 1.25rem;
   font-family: "Mynerve", cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 .intro-cont {
   display: inline-block;
-  font-size: 3.5em;
+  font-size: 3em;
   margin: 5px;
 }
 .fun {
@@ -67,15 +67,15 @@ body {
 }
 .smile-img {
   position: relative;
-  top: 27rem;
-  left: 27rem;
+  top: 23rem;
+  left: 23rem;
   height: 3rem;
   z-index: 1;
 }
 .arrow {
   position: relative;
-  top: 27rem;
-  left: 50rem;
+  top: 23rem;
+  left: 40rem;
   height: 3rem;
 }
 .apr {
@@ -213,8 +213,8 @@ body {
   .pr {
     height: 50vh;
     width: 80vw;
-    padding-bottom: 40%;
-    margin: 8% 3%;
+    padding-bottom: 20%;
+    margin: 10% 3%;
   }
   .pr-1 {
     display: grid;
