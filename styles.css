@@ -129,7 +129,10 @@ body {
 .pr-1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 35px;
+  gap: 30px;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
 }
 .pr-link {
   text-decoration: none;
@@ -138,7 +141,7 @@ body {
 .pr {
   height: 50vh;
   width: 80vw;
-  margin: 30% 7%;
+  margin: 10% 4%;
 }
 .discription > p {
   font-size: x-large;
@@ -181,4 +184,91 @@ body {
 .conn {
   display: grid;
   grid-template-columns: 1fr 4fr;
+}
+
+@media screen and (max-width: 400px) {
+  .pr-link {
+    font-size: 1rem;
+  }
+  .msg-img {
+    height: 2em;
+  }
+  .intro h2 {
+    font-size: 2em;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .intro-cont {
+    font-size: 1.2rem;
+  }
+  .second {
+    font-size: 0.5em;
+  }
+  .icons {
+    width: 17px;
+    margin-left: 3px;
+    float: right;
+  }
+  .pr {
+    height: 50vh;
+    width: 80vw;
+    padding-bottom: 40%;
+    margin: 8% 3%;
+  }
+  .pr-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 30px;
+    align-items: stretch;
+    justify-content: center;
+    align-content: stretch;
+  }
+  .title > h1 {
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+  .tech > ul > li {
+    margin: 1px;
+    padding: 2px;
+  }
+  .discription > p {
+    font-size: medium;
+  }
+  .arrow {
+    top: 15.5rem;
+    left: 2rem;
+    height: 1.5rem;
+  }
+  .smile-img {
+    position: relative;
+    top: 13rem;
+    left: 10.5rem;
+    height: 1rem;
+    z-index: 1;
+  }
+  .contact > h2 {
+    font-size: large;
+  }
+  .contact > .conn > a {
+    font-size: small;
+  }
+  .arrow-img {
+    display: inline-block;
+    position: relative;
+    top: 0.5rem;
+    height: 1.5rem;
+  }
+  .conn-img {
+    display: inline-block;
+    height: 18px;
+    width: 23px;
+  }
+  .my-img {
+    height: 100px;
+  }
+  .footer {
+    gap: 6px;
+  }
 }
