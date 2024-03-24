@@ -269,11 +269,7 @@ body {
     height: 100px;
   }
   .footer {
-    margin: 10%;
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-    align-items: flex-start;
+    gap: 6px;
   }
   .pr-img-div {
     grid-row: 1;
