@@ -108,7 +108,7 @@ body {
   border-bottom: solid 2px gray;
 }
 .title > h1 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
 }
 .tech > ul {
@@ -147,7 +147,9 @@ body {
   font-size: large;
 }
 .pr-img {
-  height: 80%;
+  position: relative;
+  top: -30px;
+  height: 120%;
   width: 100%;
 }
 .footer {
