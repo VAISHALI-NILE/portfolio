@@ -149,8 +149,8 @@ body {
 .pr-img {
   position: relative;
   top: -30px;
-  height: 120%;
-  width: 100%;
+  max-width: 100%; /* Ensure image scales down */
+  height: auto; /* Maintain aspect ratio */
 }
 .footer {
   margin: 10%;
@@ -215,8 +215,8 @@ body {
   .pr {
     height: 50vh;
     width: 80vw;
-    padding-bottom: 20%;
-    margin: 10% 3%;
+    padding-top: 2%;
+    margin: 7% 7%;
   }
   .pr-1 {
     display: grid;
@@ -276,4 +276,48 @@ body {
   .pr-img-div {
     grid-row: 1;
   }
+}
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr; /* Change header to one column */
+    text-align: center; /* Center align text */
+  }
+  .intro h2 {
+    font-size: 2.5em; /* Adjust font size */
+  }
+  .pr {
+    width: 90vw; /* Adjust project width */
+    margin: 7% 7%; /* Adjust margins */
+  }
+  .pr-img {
+    height: 100%; /* Ensure image fits container */
+  }
+  /* Adjust other elements as needed */
+}
+
+/* For mobile phones */
+@media screen and (max-width: 500px) {
+  .intro h2 {
+    font-size: 2em; /* Further reduce font size */
+  }
+  .name {
+    font-size: 2rem; /* Adjust name font size */
+  }
+  .icons {
+    width: 17px; /* Reduce icon size */
+    margin-left: 3px; /* Adjust margin */
+  }
+  .pr {
+    width: 90vw; /* Adjust project width */
+    margin: 10% 3%; /* Adjust margins */
+  }
+  .pr-1 {
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: 1fr 2fr; /* Adjust rows */
+  }
+  .title > h1 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+  /* Adjust other elements as needed */
 }
