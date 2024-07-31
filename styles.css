@@ -62,8 +62,17 @@ body {
   margin: 5px;
 }
 .fun {
+  animation: backgroundColorChange 5s;
   background-color: #c2e9ec;
   font-weight: 500;
+}
+@keyframes backgroundColorChange {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #c2e9ec;
+  }
 }
 .smile-img {
   position: relative;
@@ -126,13 +135,36 @@ body {
   margin: 2px;
   padding: 7px;
 }
-.pr-1 {
+.down-arrow {
+  justify-self: center;
+}
+.pr {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
   align-items: stretch;
   justify-content: center;
   align-content: stretch;
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+.pr.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.pr-1,
+.pr-3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+.pr-2,
+.pr-4 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
 }
 .pr-link {
   text-decoration: none;
@@ -187,8 +219,16 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
-
+hr {
+  width: 50%;
+  font-weight: bold;
+  margin-top: 10%;
+}
 @media screen and (max-width: 500px) {
+  .arrow,
+  .smile-img {
+    visibility: hidden;
+  }
   .pr-link {
     font-size: 1rem;
   }
@@ -218,7 +258,7 @@ body {
     padding-top: 2%;
     margin: 7% 7%;
   }
-  .pr-1 {
+  .pr {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
@@ -279,6 +319,10 @@ body {
 }
 /* For tablets and smaller screens */
 @media screen and (max-width: 768px) {
+  .arrow,
+  .smile-img {
+    visibility: hidden;
+  }
   .header {
     grid-template-columns: 1fr; /* Change header to one column */
     text-align: center; /* Center align text */
@@ -288,16 +332,22 @@ body {
   }
   .pr {
     width: 90vw; /* Adjust project width */
-    margin: 7% 7%; /* Adjust margins */
+    margin: 17% 1%; /* Adjust margins */
   }
   .pr-img {
     height: 100%; /* Ensure image fits container */
   }
-  /* Adjust other elements as needed */
+  hr {
+    margin-top: 15%;
+  }
 }
 
 /* For mobile phones */
 @media screen and (max-width: 500px) {
+  .arrow,
+  .smile-img {
+    visibility: hidden;
+  }
   .intro h2 {
     font-size: 2em; /* Further reduce font size */
   }
@@ -310,14 +360,20 @@ body {
   }
   .pr {
     width: 90vw; /* Adjust project width */
-    margin: 10% 3%; /* Adjust margins */
+    margin: 28% 3%; /* Adjust margins */
   }
-  .pr-1 {
+  .pr {
     grid-template-columns: 1fr; /* Single column layout */
     grid-template-rows: 1fr 2fr; /* Adjust rows */
   }
   .title > h1 {
     font-size: 1.5em; /* Adjust heading size */
+  }
+  hr {
+    margin-top: 25%;
+  }
+  .projects {
+    margin-bottom: 100%;
   }
   /* Adjust other elements as needed */
 }
