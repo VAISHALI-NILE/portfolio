@@ -155,13 +155,15 @@ body {
 }
 
 .pr-1,
-.pr-3 {
+.pr-3,
+.pr-5 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
 }
 .pr-2,
-.pr-4 {
+.pr-4,
+.pr-6 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 40px;
