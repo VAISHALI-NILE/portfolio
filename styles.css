@@ -156,7 +156,8 @@ body {
 
 .pr-1,
 .pr-3,
-.pr-5 {
+.pr-5,
+.pr-7 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
